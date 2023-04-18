@@ -1139,7 +1139,7 @@ break
             }
             break
             
-            case 'couple': case 'زواج': case 'جواز': {
+            case 'جصظيزثز٧-': case 'جوزونينين٧ن': case 'نسنيز٢زؤمثز٧': {
             if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
@@ -1154,7 +1154,7 @@ break
             }
             break
             
-            case 'طلاق': {
+            case 'نيمينخ٢نبن': {
             if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
             let orang = member[Math.floor(Math.random() * member.length)]
@@ -1169,7 +1169,7 @@ break
             }
             break
             
-            case 'جوزني': case 'زوجني': {
+            case 'خثنبزث٣زب': case 'خيويونو٤رز': {
             if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
             let me = m.sender
@@ -1184,7 +1184,7 @@ break
             }
             break
             
-            case 'طلقني': {
+            case 'حثنبوثن٣ز': {
             if (!m.isGroup) throw mess.group
             let member = participants.map(u => u.id)
             let me = m.sender
@@ -1241,7 +1241,7 @@ break
           m.reply(`Exif has been successfully changed to\n\n${themeemoji} Packname : ${global.packname}\n${themeemoji} Author : ${global.author}`)
             }
             break
-	case 'kick': case 'طرد': case 'اطرد': {
+	case 'kick': case 'الطردثخنقووب٨': case 'مسزوثال_طرد_زروث': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -1249,7 +1249,7 @@ break
 		await ElgazarBot.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 	}
 	break
-	case 'add': case 'اضافه': case 'ضيف': {
+	case 'add': case '_تثت_اضافه_تثت_': case '_تي_ضيف_ي_': {
 		if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
@@ -1326,7 +1326,7 @@ break
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 if (!isAdmins) throw mess.admin
-let teks = `══✪〘˙·٠${themeemoji}● منشن للكل ●${themeemoji}٠·˙〙✪══
+let teks = `══✪〘˙·٠${themeemoji}● منشن للكل لانقصد ازعاج ●${themeemoji}٠·˙〙✪══
  
  🌿 *الرساله : ${q ? q : 'مفيش رساله'}*\n\n`
                 for (let mem of participants) {
@@ -1335,7 +1335,7 @@ let teks = `══✪〘˙·٠${themeemoji}● منشن للكل ●${themeemoji
                 ElgazarBot.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: m })
                 }
                 break
-                case 'hidetag': case 'وهمي': case 'مخفي': {
+                case 'hidetag': case 'منشن_وهمي': case 'مخفي': {
             if (!m.isGroup) throw mess.group
             if (!isBotAdmins) throw mess.botAdmin
             if (!isAdmins) throw mess.admin
@@ -1600,7 +1600,7 @@ teks += ` ┗━${global.themeemoji} *Time :* ${moment(waktu * 1000).format('DD/
 ElgazarBot.sendTextWithMentions(m.chat, teks, m)
 }
 break
-            case 'الرابط': case 'لينك': case 'gclink': case 'grouplink': {
+            case 'يانيوثوبوك': case 'يحيزثمبزثز': case 'ثحنيمثزي': case 'يمينثزمرثزوي': {
                 if (!m.isGroup) throw mess.group
                 if (!isBotAdmins) throw mess.botAdmin
                 let response = await ElgazarBot.groupInviteCode(m.chat)
@@ -1735,7 +1735,7 @@ case 'sticker': case 's': case 'ملصق': case 'ستيكر': {
 case 'buypreim':
 m.reply(`Chat owner bro, please type .owner`)
 break
-  case 'لللللللل':
+  case 'ترقية_مميز':
 if (!isCreator) throw mess.owner
 if (!q) return m.reply(`Enter the sample number\n\nExample: \n${prefix}${command} 916909137213`)
 if(isNaN(q)) return await m.reply('must be a number')
@@ -1746,7 +1746,7 @@ fs.writeFileSync('./database/user/premium.json', JSON.stringify(premium))
 m.reply(`* PREMIUM ADDED *\n\n${themeemoji} *ID*: ${prmi}`)
 break
 case 'delprem':
- case 'لللللللللل':
+ case 'ترقية_مميز':
 if (!isCreator) throw mess.owner
   if (!q) return m.reply(`Enter the Number\n\nExample: \n${prefix}${command} 916909137213`)
   if(isNaN(q)) return await m.reply('must be a number')
@@ -1777,7 +1777,7 @@ break
 		}
 	    }
 	    break
-         case "tts":  case "انطق":  case "قول": case "speak":{
+         case "نينؤوثزي":  case "مينيزببث":  case "خيويزثزيزتيت": case "نيزثميزثزب":{
     if (isBan) return reply(mess.banned)	 			
     if (isBanChat) return reply(mess.bangc)
 
@@ -1793,7 +1793,7 @@ break
       ElgazarBot.sendMessage(m.chat,{audio: {url: texttospeechurl,},mimetype: "audio/mpeg",fileName: `ElgazarBotSpeechEngine.mp3`,},{quoted: m,});
     }
     break 
-	case 'smeme': case 'اكتب': case 'كتابه': {
+	case 'smeme': case 'اكتب': case 'تيوثويو': {
 let { TelegraPh } = require('./lib/uploader')
 if (!text) return m.reply(`رد علي صوره واكتب ${prefix + command} *والنص*`)
 if (text.includes('|')) return m.reply(`رد علي صوره واكتب ${prefix + command} *والنص*`)
@@ -2125,7 +2125,7 @@ break
                 ElgazarBot.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `${themeemoji} Title : ${media.title}\n${themeemoji} File Size : ${media.filesizeF}\n${themeemoji} Url : ${isUrl(text)}\n${themeemoji} Ext : MP3\n${themeemoji} Resolution : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
-case 'pinterest': {
+case 'بينترست': {
                 m.reply(mess.wait)
 		let { pinterest } = require('./lib/scraper')
                 anupint = await pinterest(text)
@@ -2206,7 +2206,7 @@ case 'pinterest': {
                 ElgazarBot.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
- case 'تقصير':{
+ case 'اختصار_رابط':{
    if(!q) return m.reply('link?')
    request(`https://tinyurl.com/api-create.php?url=${q}`, function (error, response, body) {
    try {
@@ -2291,7 +2291,7 @@ case 'lava': case 'rockart': case 'bloodglas': case 'halloween': case 'darkgold'
                 ElgazarBot.sendMessage(m.chat, { image: { url: anutexpro }, caption: `Made by ${global.botname}` }, { quoted: m })
              }
              break
-case'glitch3':
+case'جيلتش':
 if(!q) throw `Use ${prefix + command} text|text`
 m.reply(mess.wait)
 teks1 = q.split("|")[0]
@@ -2302,7 +2302,7 @@ maker.textpro("https://textpro.me/create-glitch-text-effect-style-tik-tok-983.ht
   .catch((err) => console.log(err));
    break
 
-case '3dbox':
+case 'بوكس_ثريدي':
 if(!q) throw `Use ${prefix + command} text`
 m.reply(mess.wait)
 maker.textpro("https://textpro.me/3d-box-text-effect-online-880.html", [
@@ -2311,7 +2311,7 @@ maker.textpro("https://textpro.me/3d-box-text-effect-online-880.html", [
 .catch((err) => console.log(err));
 break
 
-case 'waterdrop':
+case 'سقوط_مطر':
 if(!q) throw `Use ${prefix + command} text`
 m.reply(mess.wait)
  maker.textpro("https://textpro.me/dropwater-text-effect-872.html", [
@@ -2329,7 +2329,7 @@ case 'lion2':
      .catch((err) => console.log(err));
      break
 
-case 'papercut':
+case 'كتابة_ورقة':
       if(!q) throw `Use ${prefix + command} text`
       m.reply(mess.wait)
       maker.textpro("https://textpro.me/create-art-paper-cut-text-effect-online-1022.html", [
@@ -2338,7 +2338,7 @@ case 'papercut':
          .catch((err) => console.log(err));
          break
 
-case 'transformer':
+case 'ترانسفورمر':
       if(!q) throw `Use ${prefix + command} text`
       m.reply(mess.wait)
       maker.textpro("https://textpro.me/create-a-transformer-text-effect-online-1035.html", [
@@ -2358,7 +2358,7 @@ case 'harrypot':
  .catch((err) => console.log(err));
  break
 
-case 'neondevil':
+case 'نيون_ديفل':
       if(!q) throw `Use ${prefix + command} text`
       m.reply(mess.wait)
       maker.textpro("https://textpro.me/create-neon-devil-wings-text-effect-online-free-1014.html", [
@@ -2385,7 +2385,7 @@ maker.textpro("https://textpro.me/create-3d-avengers-logo-online-974.html", [
   .catch((err) => console.log(err));
    break
 
-case 'thunder':
+case 'ثاندر_تكست':
 if(!q) throw `Use ${prefix + command} text`
 m.reply(mess.wait)
 maker.textpro("https://textpro.me/online-thunder-text-effect-generator-1031.html", [
@@ -2403,7 +2403,7 @@ maker.textpro("https://textpro.me/write-text-on-foggy-window-online-free-1015.ht
   .catch((err) => console.log(err));
    break
 
-   case 'blackpinkneon':
+   case 'بلاك_بيكون':
 if(!q) throw `Use ${prefix + command} text`
 m.reply(mess.wait)
 maker.textpro("https://textpro.me/create-neon-light-blackpink-logo-text-effect-online-1081.html", [
@@ -2464,7 +2464,7 @@ maker.textpro("https://textpro.me/create-a-glitch-text-effect-online-free-1026.h
   .catch((err) => console.log(err));
    break
 
-case 'glitch3':
+case 'جيلتش2':
 if(!q) throw `Use ${prefix + command} text|text`
 m.reply(mess.wait)
 teks1 = q.split("|")[0]
@@ -2558,7 +2558,7 @@ maker.textpro("https://textpro.me/online-black-and-white-bear-mascot-logo-creati
   .catch((err) => console.log(err));
    break
 
-case 'wolf':
+case 'ذئب_لوجو':
 
 if(!q) throw `Use ${prefix + command} text`
 m.reply(mess.wait)
@@ -2570,7 +2570,7 @@ maker.textpro("https://textpro.me/create-wolf-logo-galaxy-online-936.html", [
   .catch((err) => console.log(err));
    break
 
-case 'joker':
+case 'جوكر_لوجو':
 if(!q) throw `Use ${prefix + command} text`
 m.reply(mess.wait)
 maker.textpro("https://textpro.me/create-logo-joker-online-934.html", [
@@ -2597,7 +2597,7 @@ maker.textpro("https://textpro.me/create-a-summer-neon-light-text-effect-online-
   .catch((err) => console.log(err));
    break
 
-case 'neonlight2':
+case 'نيون_تكست':
 if(!q) throw `Use ${prefix + command} text`
 m.reply(mess.wait)
 maker.textpro("https://textpro.me/neon-light-text-effect-with-galaxy-style-981.html", [
@@ -3668,7 +3668,7 @@ case 'keluar': case 'leave': {
                 m.reply('*حاله البوت خاص*')
             }
             break
-            case 'ping': case 'السرعه': case 'statusbot': case 'p': {
+            case 'ping': case 'السرعه': case 'statusbot': case 'بينج_بوت': {
                 const used = process.memoryUsage()
                 const cpus = os.cpus().map(cpu => {
                     cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
@@ -3874,7 +3874,7 @@ case 'sound88':
 case 'sound89':
 case 'sound90':
 case 'sound91':
-case 'sound92':
+case 'Homelander sad':https://i.imgur.com/23Ry2WX.mp4
 case 'sound93':
 case 'sound94':
 case 'sound95':
